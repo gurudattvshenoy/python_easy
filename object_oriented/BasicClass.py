@@ -32,7 +32,6 @@ print('type(Program.__dict__)',type(Program.__dict__))
 print('type(prg1.__dict__)',type(prg1.__dict__))
 
 
-
 ######################Output#############
 #Starting the program...
 # Classes in python is of type <class 'type'> class

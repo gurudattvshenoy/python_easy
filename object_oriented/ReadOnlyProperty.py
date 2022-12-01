@@ -1,3 +1,4 @@
+# Readonly property and caching property value
 import urllib.request
 class WebPage:
     def __init__(self,url):
@@ -33,7 +34,10 @@ class WebPage:
         self._time_in_secs = end_time - start_time
         self._page_size= len(data)
 
-page = WebPage("https://www.google.com")
-
-print("page size in bytes - ",page.page_size)
-print("time taken in seconds -",page.time_in_secs)
+urls = ['https://www.google.com','https://www.yahoo.co.in',"https://www.facebook.com"]
+for url in urls:
+    page = WebPage(url)
+    print("accessing url - ",page.url)
+    print("page size in bytes - ",page.page_size)
+    print("time taken in seconds -",page.time_in_secs)
+    print("============================================")
